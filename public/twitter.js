@@ -1,14 +1,5 @@
-// public/twitter.js
-document.getElementById('twitter-form').addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const url = document.getElementById('url').value;
-
-    const response = await fetch('/twitter-download', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url })
-    });
-
-    const message = await response.text();
-    alert(message);
+document.getElementById('downloadBtn').addEventListener('click', () => {
+    const url = document.getElementById('urlInput').value;
+    document.getElementById('result').innerText = `Initiating download for: ${url}`;
+    // TODO: Implement the actual Twitter download logic
 });

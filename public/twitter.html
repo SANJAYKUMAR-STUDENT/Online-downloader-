@@ -1,17 +1,18 @@
-<!-- public/twitter.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Twitter Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <title>Twitter Downloader</title>
 </head>
 <body>
-    <h1>Twitter Media Downloader</h1>
-    <form id="twitter-form">
-        <input type="text" id="url" placeholder="Enter Twitter URL" required>
-        <button type="submit">Download</button>
-    </form>
+    <div class="container">
+        <h1>Twitter Downloader</h1>
+        <input type="text" id="urlInput" placeholder="Paste your Twitter video URL here...">
+        <button id="downloadBtn">Download</button>
+        <div id="result"></div>
+    </div>
     <script src="twitter.js"></script>
 </body>
 </html>

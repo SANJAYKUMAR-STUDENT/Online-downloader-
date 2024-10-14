@@ -1,17 +1,18 @@
-<!-- public/facebook.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Facebook Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <title>Facebook Downloader</title>
 </head>
 <body>
-    <h1>Facebook Media Downloader</h1>
-    <form id="facebook-form">
-        <input type="text" id="url" placeholder="Enter Facebook URL" required>
-        <button type="submit">Download</button>
-    </form>
+    <div class="container">
+        <h1>Facebook Downloader</h1>
+        <input type="text" id="urlInput" placeholder="Paste your Facebook video URL here...">
+        <button id="downloadBtn">Download</button>
+        <div id="result"></div>
+    </div>
     <script src="facebook.js"></script>
 </body>
 </html>
