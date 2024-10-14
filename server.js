@@ -24,6 +24,11 @@ app.get('/twitter', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'twitter.html'));
 });
 
+// Serve a landing page at the root URL
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // Logging middleware (optional)
 app.use((req, res, next) => {
     const logMessage = `${new Date().toISOString()} - ${req.method} ${req.url}\n`;
